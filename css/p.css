@@ -1,0 +1,93 @@
+p {
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Common styles for all slideshow containers */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Additional styles for individual slideshow containers */
+.slideshow-container-2,
+.slideshow-container-3,
+.slideshow-container-4,
+.slideshow-container-5 {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+/* Additional styles for individual dots */
+.dot-2,
+.dot-3,
+.dot-4,
+.dot-5 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-2,
+.dot-2:hover,
+.active-3,
+.dot-3:hover,
+.active-4,
+.dot-4:hover,
+.active-5,
+.dot-5:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    p {
+        font-size: 11px;
+    }
+}
